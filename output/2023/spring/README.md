@@ -4,9 +4,9 @@ This is the main document for the {{course.code}} course at University of Miami,
 
 🗓 Classes on {{course.weekDays}}, from `{{course.timeStart}}` to `{{course.timeEnd}}`.
 
-| Lecturer        | Email           |
-| --------------- | --------------- |
-| Vinicius Sueiro | vss43@miami.edu |
+| Lecturer                                                          | Email           |
+| ----------------------------------------------------------------- | --------------- |
+| [Vinicius Sueiro](https://com.miami.edu/profile/vinicius-sueiro/) | vss43@miami.edu |
 
 Last updated on {{course.updatedDate}}. This document is subject to change.
 
