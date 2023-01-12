@@ -33,6 +33,8 @@ In order to reach the desired goals, students will learn concepts and techniques
 
 We will not learn everything at once. Instead, this course is split into {{course.steps}} steps. Each step builds on top of what we learned from the previous one. Here is what this progression looks like:
 
+<div class="timeline" data-id="{{spreadsheetId}}" data-range="spreadsheetRange"></div>
+
 ![Weekly gantt chart shows weeks class, divided into steps. It resembles 2D platform games by indicading a 🐥 character needs to progress to reach a 🔭 in the end.”](assets/cim643.png)
 
 After a few of weeks of introduction, students begin working on projects (of increasing complexity).
