@@ -26,7 +26,7 @@ html {
 .timeline .legend {
   display: flex;
   padding: calc(var(--basis) * 25px);
-  gap: 25px;
+  gap: calc(var(--basis) * 25px);
   border-radius: calc(var(--basis) * 12.5px);
   border: calc(var(--basis) * 2.5px) solid Indigo;
   width: fit-content;
@@ -139,5 +139,5 @@ html {
 .timeline .blocks {
   display: flex;
   width: fit-content;
-  gap: 1px;
+  gap: calc(var(--basis) * 2.5px);
 }
