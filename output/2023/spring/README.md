@@ -1,3 +1,6 @@
+<script src="https://vsueiro.com/syllabus-generator/lib/timeline.css">
+<script src="https://vsueiro.com/syllabus-generator/lib/timeline.js">
+
 # Syllabus — {{course.name}}
 
 This is the main document for the {{course.code}} course at University of Miami, {{course.semester}} {{course.year}}.
