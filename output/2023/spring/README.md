@@ -1,5 +1,5 @@
-<script src="https://vsueiro.com/syllabus-generator/lib/timeline.css">
-<script src="https://vsueiro.com/syllabus-generator/lib/timeline.js">
+<script src="https://vsueiro.com/syllabus-generator/lib/timeline.css" defer></script>
+<script src="https://vsueiro.com/syllabus-generator/lib/timeline.js" defer></script>
 
 # Syllabus — {{course.name}}
 
