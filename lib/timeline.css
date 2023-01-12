@@ -142,3 +142,9 @@ html {
   width: fit-content;
   gap: calc(var(--basis) * 2.5px);
 }
+
+/* Table */
+
+.table td:first-child {
+  white-space: nowrap;
+}
