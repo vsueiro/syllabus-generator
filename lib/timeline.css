@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --basis: 0.5;
+}
+
+.timeline * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.timeline {
+  font-size: calc(var(--basis) * 25px);
+  line-height: 2;
+  font-family: "Inter", sans-serif;
+  color: Indigo;
+}
+
+/* Legend */
+
+.timeline .legend {
+  display: flex;
+  padding: calc(var(--basis) * 25px);
+  gap: 25px;
+  border-radius: calc(var(--basis) * 12.5px);
+  border: calc(var(--basis) * 2.5px) solid Indigo;
+  width: fit-content;
+  min-width: fit-content;
+}
+
+.timeline .legend > div {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--basis) * 25px);
+}
+
+.timeline .legend > div span {
+  white-space: nowrap;
+}
+
+/* Blocks */
+
+.timeline .block {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: calc(var(--basis) * 50px);
+  height: calc(var(--basis) * 50px);
+  background: Lavender;
+  flex-shrink: 0;
+  border-radius: calc(var(--basis) * 12.5px);
+  text-decoration: none;
+}
+
+.timeline .block[data-class="Yes"] {
+  background: Indigo;
+}
+
+.timeline .block[data-class="No"] {
+  background: Transparent;
+  border: calc(var(--basis) * 2.5px) dashed Indigo;
+}
+
+.timeline .block[data-event="Presentation"] {
+  background: Turquoise;
+}
+
+.timeline .block[data-event="Final Exam"] {
+  background: Tomato;
+}
+
+.timeline .block[data-day]:hover {
+  box-shadow: 0 0 0 calc(var(--basis) * 5px) DeepPink;
+  cursor: pointer;
+  z-index: 999;
+  position: relative;
+}
+
+.timeline .block[data-day]::before {
+  content: attr(data-day);
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  width: fit-content;
+  bottom: calc(var(--basis) * 62.5px);
+  padding: calc(var(--basis) * 12.5px) calc(var(--basis) * 25px);
+  border-radius: calc(var(--basis) * 12.5px);
+  background: DeepPink;
+  color: GhostWhite;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(var(--basis) * 12.5px));
+  transition: all 0.4s;
+}
+
+.timeline .block[data-day]:hover::before {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Chart */
+
+.timeline .rows {
+  display: flex;
+  flex-direction: column;
+  margin: calc(var(--basis) * 50px) 0;
+  gap: calc(var(--basis) * 25px);
+  padding: calc(var(--basis) * 50px) 0;
+  width: fit-content;
+  align-items: stretch;
+}
+
+.timeline .row {
+  display: flex;
+  align-items: center;
+  padding-bottom: calc(var(--basis) * 25px);
+  border-bottom: calc(var(--basis) * 2.5px) solid Lavender;
+}
+
+.timeline .row .info {
+  flex-shrink: 0;
+  width: calc(var(--basis) * 350px);
+  padding: 0 calc(var(--basis) * 25px);
+}
+
+.timeline .row .info p:first-child {
+  font-weight: bold;
+}
+
+.timeline .blocks {
+  display: flex;
+  width: fit-content;
+  gap: 1px;
+}
