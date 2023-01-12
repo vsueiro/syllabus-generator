@@ -148,3 +148,12 @@ html {
 .table td:first-child {
   white-space: nowrap;
 }
+
+.table tr {
+  transition: box-shadow 0.4s;
+}
+
+.table tr.highlighted {
+  box-shadow: 0 0 0 2px deeppink;
+  position: relative;
+}
