@@ -19,6 +19,7 @@ html {
   line-height: 2;
   font-family: "Inter", sans-serif;
   color: Indigo;
+  margin: calc(var(--basis) * 50px) 0;
 }
 
 /* Legend */
