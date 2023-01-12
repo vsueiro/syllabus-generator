@@ -128,6 +128,10 @@ html {
   padding: 0 calc(var(--basis) * 25px);
 }
 
+.timeline .row .info p {
+  margin: 0;
+}
+
 .timeline .row .info p:first-child {
   font-weight: bold;
 }
