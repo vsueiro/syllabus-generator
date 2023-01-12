@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 64px;
 }
 
 .timeline {
@@ -151,9 +152,10 @@ html {
 
 .table tr {
   transition: box-shadow 0.4s;
+  box-shadow: inset 0 0 0 0 DeepPink;
 }
 
 .table tr.highlighted {
-  box-shadow: 0 0 0 2px deeppink;
+  box-shadow: inset 0 0 0 4px DeepPink;
   position: relative;
 }
