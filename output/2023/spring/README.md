@@ -55,6 +55,14 @@ The following tables briefly describe what we will be doing during class (“Con
 
 {{course.tables}}
 
+<div class="table" data-step="1"></div>
+
+<div class="table" data-step="2"></div>
+
+<div class="table" data-step="3"></div>
+
+<div class="table" data-step="4"></div>
+
 ## Grading
 
 I reserve the right to adjust the final grade according to class participation, attendance, overall
