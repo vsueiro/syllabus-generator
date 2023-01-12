@@ -72,7 +72,7 @@ quality of work, etc.
         <td>5</td>
     </tr>
     <tr>
-        <td rowspan=3>First Project</td>
+        <td rowspan="3">First Project</td>
         <td>✏️ &nbsp;Planning</td>
         <td>10</td>
     </tr>
@@ -85,7 +85,7 @@ quality of work, etc.
         <td>10</td>
     </tr>
     <tr>
-        <td rowspan=3>Second Project</td>
+        <td rowspan="3">Second Project</td>
         <td>✏️ &nbsp;Planning</td>
         <td>10</td>
     </tr>
@@ -98,7 +98,7 @@ quality of work, etc.
         <td>10</td>
     </tr>
     <tr>
-        <td rowspan=3>Third Project</td>
+        <td rowspan="3">Third Project</td>
         <td>✏️ &nbsp;Planning</td>
         <td>10</td>
     </tr>
