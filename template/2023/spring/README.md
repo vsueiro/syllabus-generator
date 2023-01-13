@@ -37,11 +37,17 @@ We will not learn everything at once. Instead, this course is split into {{cours
 
 After a few of weeks of introduction, students begin working on projects (of increasing complexity).
 
-#### Presentation days
+#### Presentation Days
 
 Each student has about 5 minutes to present their project and get feedback.
 
 After the presentation, students are free to adjust the project (based on that feedback) and submit it for grading (prior to the beginning of the first class of the following week).
+
+##### Peer Feedback
+
+…
+
+<img src="../../media/peer-feedback.gif" alt="Animated diagram represents how students provide feedback to each other. After one student presents, the next student will provide feedback." width="226">
 
 ### Course Content
 
