@@ -108,18 +108,36 @@ html {
 
 /* Today */
 
+@keyframes bounce {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(-125%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 .block[data-today="Yes"]::after {
-  content: "";
-  display: block;
+  content: "⬇";
   position: absolute;
-  top: -2px;
+  top: 0;
+  right: auto;
+  left: auto;
+  display: flex;
+  color: deeppink;
   transform: translateY(-100%);
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 10px 10px 0 10px;
-  border-color: DeepPink transparent transparent transparent;
-  padding: 0;
+  transition: opacity 0.4s;
+  animation: bounce 1s infinite;
+  pointer-events: none;
+}
+
+.block:hover::after {
+  opacity: 0;
 }
 
 /* Chart */
