@@ -150,7 +150,7 @@ html {
   flex-direction: column;
   margin: calc(var(--basis) * 50px) 0;
   gap: calc(var(--basis) * 25px);
-  padding: calc(var(--basis) * 50px) 0;
+  padding: calc(var(--basis) * 50px) 0 0;
   width: fit-content;
   align-items: stretch;
 }
