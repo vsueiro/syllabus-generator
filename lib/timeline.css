@@ -48,6 +48,7 @@ html {
 /* Blocks */
 
 .timeline .block {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: end;
@@ -103,6 +104,22 @@ html {
 .timeline .block[data-day]:hover::before {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Today */
+
+.block[data-today="Yes"]::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  transform: translateY(-100%);
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: DeepPink transparent transparent transparent;
+  padding: 0;
 }
 
 /* Chart */
