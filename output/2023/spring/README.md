@@ -77,7 +77,7 @@ I reserve the right to adjust the final grade according to class participation, 
         <td>10</td>
     </tr>
     <tr>
-        <td rowspan=5>Project: Profile</td>
+        <td rowspan=5>Project: X</td>
         <td rowspan=5>40 Points</td>
         <td rowspan=2>Planning</td>
         <td>Presentation</td>
@@ -101,7 +101,7 @@ I reserve the right to adjust the final grade according to class participation, 
         <td>10</td>
     </tr>
     <tr>
-        <td rowspan=5>Project: Quiz</td>
+        <td rowspan=5>Project: Y</td>
         <td rowspan=5>40 Points</td>
         <td rowspan=2>Planning</td>
         <td>Presentation</td>
