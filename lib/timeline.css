@@ -223,9 +223,15 @@ html {
 
   .timeline .block {
     pointer-events: none;
+    width: calc(var(--basis) * 33.333px);
+    height: calc(var(--basis) * 33.333px);
   }
 
   .timeline .block::after {
     display: none;
+  }
+
+  .timeline .legend {
+    flex-wrap: wrap;
   }
 }
