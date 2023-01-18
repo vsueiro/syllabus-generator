@@ -104,7 +104,8 @@ html {
   transition: all 0.4s;
 }
 
-.timeline .block[data-day]:hover::before {
+.timeline .block[data-day]:hover::before,
+.timeline .block[data-day]:focus::before {
   opacity: 1;
   transform: translateY(0);
 }
