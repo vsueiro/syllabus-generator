@@ -79,7 +79,8 @@ html {
   background: Tomato;
 }
 
-.timeline .block[data-day]:hover {
+.timeline .block[data-day]:hover,
+.timeline .block[data-day]:focus {
   box-shadow: 0 0 0 calc(var(--basis) * 5px) DeepPink;
   cursor: pointer;
   z-index: 999;
