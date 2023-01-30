@@ -238,3 +238,21 @@ html {
     flex-wrap: wrap;
   }
 }
+
+/* Print (save as PDF) */
+
+.print-only {
+  display: none;
+}  
+
+@media print {
+
+  .print-only {
+    display: block;
+  }
+
+  .screen-only {
+    display: none;
+  }
+
+}
