@@ -234,6 +234,15 @@ html {
   animation: spin 0.5s linear infinite;
 }
 
+/* Thumbnail */
+
+.thumbnail {
+  aspect-ratio: 5/1;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 1em;
+}
+
 /* Responsive */
 
 @media (max-width: 800px) {
