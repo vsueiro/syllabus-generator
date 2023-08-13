@@ -240,7 +240,7 @@ html {
   aspect-ratio: 5/1;
   object-fit: cover;
   border-radius: 8px;
-  margin-top: 1em;
+  margin-top: 0.25em;
 }
 
 /* Responsive */
