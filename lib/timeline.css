@@ -217,13 +217,13 @@ html {
 }
 
 .timeline:empty,
-.table:empty {
+.table[data-step="1"]:empty {
   display: flex;
   justify-content: center;
 }
 
 .timeline:empty::before,
-.table:empty::before {
+.table[data-step="1"]:empty::before {
   content: "";
   display: flex;
   width: 24px;
