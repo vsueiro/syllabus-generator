@@ -79,12 +79,12 @@ html {
   background: Tomato;
 }
 
-.timeline .block[data-event="Inspiration"]::after {
+.timeline .block[data-event="Inspiration"]::after,
+.timeline .block[data-event="Debug"]::after {
   align-items: center;
   bottom: 0;
   color: inherit;
-  color: Lavender;
-  content: "💡";
+  content: "";
   display: flex;
   font-weight: bold;
   justify-content: center;
@@ -92,6 +92,14 @@ html {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.timeline .block[data-event="Inspiration"]::after {
+  content: "💡";
+}
+
+.timeline .block[data-event="Debug"]::after {
+  content: "🐞";
 }
 
 .timeline .block[data-day]:hover,
