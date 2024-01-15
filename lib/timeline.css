@@ -173,6 +173,7 @@ html {
 
 .timeline .row .info p {
   margin: 0;
+  line-height: 1.5;
 }
 
 .timeline .row .info p:first-child {
