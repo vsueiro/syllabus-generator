@@ -79,17 +79,16 @@ html {
   background: Tomato;
 }
 
-.timeline .block[data-event="Weekly Wonder"]::after {
+.timeline .block[data-event="Inspiration"]::after {
   align-items: center;
   bottom: 0;
   color: inherit;
   color: Lavender;
-  content: "w";
+  content: "💡";
   display: flex;
   font-weight: bold;
   justify-content: center;
   left: 0;
-  opacity: 0.666;
   position: absolute;
   right: 0;
   top: 0;
