@@ -16,30 +16,30 @@ html {
 }
 
 .timeline {
+  color: Indigo;
+  font-family: "Inter", sans-serif;
   font-size: calc(var(--basis) * 25px);
   line-height: 2;
-  font-family: "Inter", sans-serif;
-  color: Indigo;
   margin: calc(var(--basis) * 50px) 0;
-  overflow-x: auto;
   max-width: 100%;
+  overflow-x: auto;
 }
 
 /* Legend */
 
 .timeline .legend {
-  display: flex;
-  padding: calc(var(--basis) * 25px);
-  gap: calc(var(--basis) * 25px);
-  border-radius: calc(var(--basis) * 12.5px);
   border: calc(var(--basis) * 2.5px) solid Indigo;
-  width: fit-content;
+  border-radius: calc(var(--basis) * 12.5px);
+  display: flex;
+  gap: calc(var(--basis) * 25px);
   min-width: fit-content;
+  padding: calc(var(--basis) * 25px);
+  width: fit-content;
 }
 
 .timeline .legend > div {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: calc(var(--basis) * 25px);
 }
 
@@ -50,16 +50,16 @@ html {
 /* Blocks */
 
 .timeline .block {
-  position: relative;
-  display: flex;
-  justify-content: center;
   align-items: end;
-  width: calc(var(--basis) * 50px);
-  height: calc(var(--basis) * 50px);
   background: Lavender;
-  flex-shrink: 0;
   border-radius: calc(var(--basis) * 12.5px);
+  display: flex;
+  flex-shrink: 0;
+  height: calc(var(--basis) * 50px);
+  justify-content: center;
+  position: relative;
   text-decoration: none;
+  width: calc(var(--basis) * 50px);
 }
 
 .timeline .block[data-class="Yes"] {
@@ -79,30 +79,46 @@ html {
   background: Tomato;
 }
 
+.timeline .block[data-event="Weekly Wonder"]::after {
+  align-items: center;
+  bottom: 0;
+  color: inherit;
+  color: Lavender;
+  content: "w";
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  left: 0;
+  opacity: 0.666;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 .timeline .block[data-day]:hover,
 .timeline .block[data-day]:focus {
   box-shadow: 0 0 0 calc(var(--basis) * 5px) DeepPink;
   cursor: pointer;
-  z-index: 999;
-  position: relative;
   outline: none;
+  position: relative;
+  z-index: 999;
 }
 
 .timeline .block[data-day]::before {
-  content: attr(data-day);
-  position: relative;
-  white-space: nowrap;
-  display: flex;
-  width: fit-content;
-  bottom: calc(var(--basis) * 62.5px);
-  padding: calc(var(--basis) * 12.5px) calc(var(--basis) * 25px);
-  border-radius: calc(var(--basis) * 12.5px);
   background: DeepPink;
+  border-radius: calc(var(--basis) * 12.5px);
+  bottom: calc(var(--basis) * 62.5px);
   color: GhostWhite;
+  content: attr(data-day);
+  display: flex;
   opacity: 0;
+  padding: calc(var(--basis) * 12.5px) calc(var(--basis) * 25px);
   pointer-events: none;
+  position: relative;
   transform: translateY(calc(var(--basis) * 12.5px));
   transition: all 0.4s;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .timeline .block[data-day]:hover::before,
@@ -128,18 +144,18 @@ html {
 }
 
 .block[data-today="Yes"]::after {
-  content: "⬇";
-  font-family: "Segoe UI Symbol", monospace;
-  position: absolute;
-  top: 0;
-  right: auto;
-  left: auto;
-  display: flex;
+  animation: bounce 1s infinite;
   color: DeepPink;
+  content: "⬇";
+  display: flex;
+  font-family: "Segoe UI Symbol", monospace;
+  left: auto;
+  pointer-events: none;
+  position: absolute;
+  right: auto;
+  top: 0;
   transform: translateY(-100%);
   transition: opacity 0.4s;
-  animation: bounce 1s infinite;
-  pointer-events: none;
 }
 
 .block:hover::after {
@@ -149,31 +165,31 @@ html {
 /* Chart */
 
 .timeline .rows {
+  align-items: stretch;
   display: flex;
   flex-direction: column;
-  margin: calc(var(--basis) * 50px) 0;
   gap: calc(var(--basis) * 25px);
+  margin: calc(var(--basis) * 50px) 0;
   padding: calc(var(--basis) * 50px) 0 0;
   width: fit-content;
-  align-items: stretch;
 }
 
 .timeline .row {
-  display: flex;
   align-items: center;
-  padding-bottom: calc(var(--basis) * 25px);
   border-bottom: calc(var(--basis) * 2.5px) solid Lavender;
+  display: flex;
+  padding-bottom: calc(var(--basis) * 25px);
 }
 
 .timeline .row .info {
   flex-shrink: 0;
-  width: calc(var(--basis) * 350px);
   padding: 0 calc(var(--basis) * 25px) 0 0;
+  width: calc(var(--basis) * 350px);
 }
 
 .timeline .row .info p {
-  margin: 0;
   line-height: 1.5;
+  margin: 0;
 }
 
 .timeline .row .info p:first-child {
@@ -182,8 +198,8 @@ html {
 
 .timeline .blocks {
   display: flex;
-  width: fit-content;
   gap: calc(var(--basis) * 2.5px);
+  width: fit-content;
 }
 
 /* Table */
@@ -197,8 +213,8 @@ html {
 }
 
 .table tr {
-  transition: box-shadow 0.4s;
   box-shadow: inset 0 0 0 0 DeepPink;
+  transition: box-shadow 0.4s;
 }
 
 .table tr.highlighted {
@@ -225,23 +241,23 @@ html {
 
 .timeline:empty::before,
 .table[data-step="1"]:empty::before {
+  animation: spin 0.5s linear infinite;
+  aspect-ratio: 1;
+  border: 4px solid Lavender;
+  border-radius: 50%;
+  border-top: 4px solid DeepPink;
   content: "";
   display: flex;
   width: 24px;
-  aspect-ratio: 1;
-  border: 4px solid Lavender;
-  border-top: 4px solid DeepPink;
-  border-radius: 50%;
-  animation: spin 0.5s linear infinite;
 }
 
 /* Thumbnail */
 
 .thumbnail {
   aspect-ratio: 4/1;
-  object-fit: cover;
   border-radius: 8px;
   margin-top: 0.25em;
+  object-fit: cover;
 }
 
 /* Responsive */
@@ -254,19 +270,19 @@ html {
 
 @media (max-width: 600px) {
   .timeline .row {
-    flex-direction: column;
     align-items: flex-start;
+    flex-direction: column;
   }
 
   .timeline .row .info {
-    width: 100%;
     padding: 0 0 calc(var(--basis) * 25px) 0;
+    width: 100%;
   }
 
   .timeline .block {
+    height: calc(var(--basis) * 33.333px);
     pointer-events: none;
     width: calc(var(--basis) * 33.333px);
-    height: calc(var(--basis) * 33.333px);
   }
 
   .timeline .block::after {
