@@ -79,26 +79,25 @@ html {
   background: Tomato;
 }
 
-.timeline .block[data-event="Inspiration"]::after,
-.timeline .block[data-event="Debug"]::after {
+.timeline .block[data-event="Inspiration"] .icon,
+.timeline .block[data-event="Debug"] .icon {
   align-items: center;
   bottom: 0;
   color: inherit;
-  content: "";
   display: flex;
-  font-weight: bold;
   justify-content: center;
   left: 0;
   position: absolute;
   right: 0;
+  text-decoration: none;
   top: 0;
 }
 
-.timeline .block[data-event="Inspiration"]::after {
+.timeline .block[data-event="Inspiration"] .icon::before {
   content: "💡";
 }
 
-.timeline .block[data-event="Debug"]::after {
+.timeline .block[data-event="Debug"] .icon::before {
   content: "🐞";
 }
 
