@@ -63,7 +63,7 @@ html {
 }
 
 .timeline .block[data-class="Yes"] {
-  background: Plum;
+  background: #be9edf; /* Tint variation of RebeccaPurple */
 }
 
 .timeline .block[data-class="No"] {
