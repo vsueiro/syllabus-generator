@@ -176,6 +176,7 @@ html {
   flex-direction: column;
   gap: calc(var(--basis) * 25px);
   margin: calc(var(--basis) * 50px) 0;
+  min-width: 50%;
   padding: calc(var(--basis) * 50px) 0 0;
   width: fit-content;
 }
