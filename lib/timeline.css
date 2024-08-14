@@ -178,7 +178,8 @@ html {
   margin: calc(var(--basis) * 50px) 0;
   min-width: 50%;
   padding: calc(var(--basis) * 50px) 0 0;
-  width: fit-content;
+  /* width: fit-content; */
+  width: 100%;
 }
 
 .timeline .row {
@@ -190,13 +191,16 @@ html {
 
 .timeline .row .info {
   flex-shrink: 0;
-  padding: 0 calc(var(--basis) * 25px) 0 0;
-  width: calc(var(--basis) * 500px);
+  padding: 0;
+  padding-right: calc(var(--basis) * 25px);
+  /* width: calc(var(--basis) * 500px); */
+  width: calc(50% - calc(var(--basis) * 25px));
 }
 
 .timeline .row .info p {
   line-height: 1.5;
   margin: 0;
+  text-wrap: balance;
 }
 
 .timeline .row .info p:first-child {
