@@ -191,7 +191,7 @@ html {
 .timeline .row .info {
   flex-shrink: 0;
   padding: 0 calc(var(--basis) * 25px) 0 0;
-  width: calc(var(--basis) * 350px);
+  width: calc(var(--basis) * 500px);
 }
 
 .timeline .row .info p {
